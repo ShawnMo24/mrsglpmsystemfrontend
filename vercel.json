@@ -1,0 +1,15 @@
+{
+  "buildCommand": "npm run build",
+  "outputDirectory": "dist",
+  "framework": "vite",
+  "rewrites": [
+    { "source": "/api/(.*)", "destination": "/api/$1" },
+    { "source": "/(.*)", "destination": "/index.html" }
+  ],
+  "env": {
+    "OPENAI_API_KEY_GOOGLE": "@openai_api_key_google",
+    "OPENAI_API_KEY_DEEPSEEK": "@openai_api_key_deepseek",
+    "OPENAI_API_KEY_MAPBOX": "@openai_api_key_mapbox",
+    "OPENAI_API_KEY": "@openai_api_key"
+  }
+}
